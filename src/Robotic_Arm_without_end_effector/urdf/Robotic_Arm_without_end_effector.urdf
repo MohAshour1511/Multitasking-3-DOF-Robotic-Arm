@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Robotic_Arm_without_end_effector">
+  
+  <link name="world"/>
+  <joint name="base_joint" type="fixed">
+	<parent link="world"/>
+	<child link="base_link"/>
+	<origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+  </joint>  
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.00012473 0.0004736 0.022246"
+        rpy="0 0 0" />
+      <mass
+        value="0.094996" />
+      <inertia
+        ixx="0.00012598"
+        ixy="-2.7794E-08"
+        ixz="-3.9054E-06"
+        iyy="0.00013728"
+        iyz="-2.3927E-07"
+        izz="0.00020566" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic_Arm_without_end_effector/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic_Arm_without_end_effector/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="-0.0064346 0.017289 -0.001372"
+        rpy="0 0 0" />
+      <mass
+        value="0.068038" />
+      <inertia
+        ixx="5.8133E-05"
+        ixy="5.1777E-06"
+        ixz="-6.4176E-07"
+        iyy="5.4676E-05"
+        iyz="6.2427E-06"
+        izz="4.5018E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic_Arm_without_end_effector/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic_Arm_without_end_effector/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.057"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="6.284"
+      effort="300"
+      velocity="3" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="-0.00013011 0.05859 0.0059688"
+        rpy="0 0 0" />
+      <mass
+        value="0.064393" />
+      <inertia
+        ixx="0.00010704"
+        ixy="-1.6548E-09"
+        ixz="2.3843E-10"
+        iyy="9.11E-06"
+        iyz="2.3961E-07"
+        izz="0.00011184" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic_Arm_without_end_effector/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.2549 0.92157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic_Arm_without_end_effector/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0 0.040453 -0.013742"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="3.142"
+      effort="200"
+      velocity="3" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="0.00027785 0.039285 0.012409"
+        rpy="0 0 0" />
+      <mass
+        value="0.050268" />
+      <inertia
+        ixx="5.4601E-05"
+        ixy="-6.9583E-08"
+        ixz="-5.5033E-11"
+        iyy="9.2868E-06"
+        iyz="-2.8753E-07"
+        izz="5.8149E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic_Arm_without_end_effector/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robotic_Arm_without_end_effector/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="revolute">
+    <origin
+      xyz="0 0.12 0"
+      rpy="3.1416 0 3.1416" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="200"
+      velocity="3" />
+  </joint>
+  
+  <transmission name="link_1_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="joint_1">
+	<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_1_motor">
+	<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+  
+  <transmission name="link_2_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="joint_2">
+	<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_2_motor">
+	<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+  
+  <transmission name="link_3_trans">
+	<type>transmission_interface/SimpleTransmission</type>
+	<joint name="joint_3">
+	<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	</joint>
+	<actuator name="link_3_motor">
+	<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+	<mechanicalReduction>1</mechanicalReduction>
+	</actuator>
+  </transmission>
+  
+  <gazebo>
+	<plugin name="control"
+filename="libgazebo_ros_control.so">
+		<robotNamespace>/</robotNamespace>
+	</plugin>
+  </gazebo>
+  
+  <gazebo reference="link_1">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+  
+  <gazebo reference="link_2">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+  
+  <gazebo reference="link_3">
+	<selfCollide>true</selfCollide>
+  </gazebo>
+  
+</robot>

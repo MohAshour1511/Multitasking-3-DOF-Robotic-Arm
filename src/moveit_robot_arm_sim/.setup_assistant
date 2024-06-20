@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: Robotic_Arm_without_end_effector
+    relative_path: urdf/Robotic_Arm_without_end_effector.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/Robotic_Arm_without_end_effector.srdf
+  CONFIG:
+    author_name: TODO
+    author_email: TODO@email.com
+    generated_timestamp: 1716438794

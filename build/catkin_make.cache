@@ -1,0 +1,2 @@
+Robotic_Arm_without_end_effector:moveit_robot_arm_sim
+-DCATKIN_DEVEL_PREFIX=/home/mohashour/Desktop/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/mohashour/Desktop/catkin_ws/install -G Unix Makefiles

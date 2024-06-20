@@ -1,0 +1,8 @@
+prefix=/home/mohashour/Desktop/catkin_ws/devel
+
+Name: Robotic_Arm_without_end_effector
+Description: Description of Robotic_Arm_without_end_effector
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs roscpp rospy std_msgs
