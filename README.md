@@ -1,5 +1,5 @@
 # Multitasking 3 DOF Robotic Arm
- A robotic arm project with 3 Degrees of Freedom (DOF) multitasking capabilities, driven by ROS (Robot Operating System) and MoveIt. It has innovative design enables seamless multitasking, empowering the arm to efficiently handle diverse tasks with precision and speed. Leveraging the power of ROS and the advanced motion planning of MoveIt.
+ A robotic arm project with 3 Degrees Of Freedom (DOF) multitasking capabilities, driven by ROS (Robot Operating System) and MoveIt. It has innovative design enables seamless multitasking, empowering the arm to efficiently handle diverse tasks with precision and speed. Leveraging the power of ROS and the advanced motion planning of MoveIt.
  
  1) Design Overview: This robotic arm has three joints, three links - including base link - designed for smooth movements in any direction without end effector. Each joint is optimized for both agility and strength, making the arm versatile for various tasks.
  
